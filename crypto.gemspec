@@ -2,17 +2,20 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "crypto/version"
+require './lib/crypto'
 
 Gem::Specification.new do |spec|
   spec.name          = "crypto"
   spec.version       = Crypto::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.authors       = ['Neil']
+  spec.email         = ['nvseejoor@gmail.com']
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = 'This gem scrapes data about crypto prices'
+  spec.description   = 'Pulls data from CoinMarketCap'
+  spec.homepage      = 'https://github.com/urbanvas/crypto-cli-app'
   spec.license       = "MIT"
+
+
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
