@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require_relative '../lib/crypto'
+require_relative '../lib/crypto/data'
 
 puts "sup"
+
+Datascraper.zipping
