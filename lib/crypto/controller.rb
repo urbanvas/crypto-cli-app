@@ -29,8 +29,6 @@ class Controller
       coin = Datascraper.reveal(input)
       puts "The current price of #{input.capitalize} is #{coin}"
       puts " "
-      # puts "what coin would you like to know the price of?"
-      # input = gets.chomp.downcase
       take_action
     end
   end
