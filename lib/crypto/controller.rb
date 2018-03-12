@@ -17,7 +17,7 @@ class Controller
   end
 
   def take_action
-    puts "what coin would you like to know the price of?"
+    puts "what coin would you like to know the price of? Else type 'exit'"
     input = gets.chomp.downcase
     if input == "exit"
       puts "Hope you see many gains! Have a nice day."
