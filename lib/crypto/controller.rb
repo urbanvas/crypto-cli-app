@@ -4,7 +4,6 @@ class Controller
     welcome
     Datascraper.zipping
     take_action
-    puts "Hope you see many gains! Have a nice day."
   end
 
   def welcome
@@ -20,17 +19,18 @@ class Controller
   def take_action
     puts "what coin would you like to know the price of?"
     input = gets.chomp.downcase
-    if Datascraper.pairs.key?(input)
-      while input != "exit"
-        coin = Datascraper.reveal(input)
-        puts "The current price of #{input.capitalize} is #{coin}"
-        puts " "
-        puts "what coin would you like to know the price of?"
-        input = gets.chomp.downcase
-      end
-    else
+    if input == "exit"
+      puts "Hope you see many gains! Have a nice day."
+    elsif Datascraper.pairs.key?(input) == false
       puts "Could not find it, please enter it again."
       puts " "
+      take_action
+    elsif input != "exit"
+      coin = Datascraper.reveal(input)
+      puts "The current price of #{input.capitalize} is #{coin}"
+      puts " "
+      # puts "what coin would you like to know the price of?"
+      # input = gets.chomp.downcase
       take_action
     end
   end
