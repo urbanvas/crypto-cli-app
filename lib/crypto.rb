@@ -1,5 +1,3 @@
 require "crypto/version"
-
-module Crypto
-  # Your code goes here...
-end
+require_relative 'crypto/data'
+require_relative 'crypto/controller'
