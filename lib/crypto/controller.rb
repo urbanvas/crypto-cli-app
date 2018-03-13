@@ -23,6 +23,8 @@ class Controller
     if input == "exit"
       puts "Hope you see many gains! Have a nice day."
     elsif input == "list"
+      puts "Here are the top 10 coins!"
+      puts ""
       i = 0
       until i == 10
         puts Coin.all[i].name.capitalize
