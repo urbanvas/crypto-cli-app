@@ -43,6 +43,3 @@ class Controller
     end
   end
 end
-
-
-#fucntionality here (top ten coins)
