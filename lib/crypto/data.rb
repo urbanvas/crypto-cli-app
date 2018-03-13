@@ -4,13 +4,16 @@ require 'pry'
 
 class Datascraper
 
-  attr_reader :coin_names, :coin_price, :pairs
+  attr_reader :coin_names, :coin_price
 
   @coin_names = []
   @coin_price = []
-  @pairs = {}
 
   @@dos = []
+
+  def self.dos
+    @@dos
+  end
 
   def self.scrape_name(url = 'https://coinmarketcap.com/')
     doc = Nokogiri::HTML(open(url))
@@ -31,33 +34,4 @@ class Datascraper
   def dos
     @@dos
   end
-
-
-
-  # binding.pry
-  #
-  # def self.price(url = 'https://coinmarketcap.com/')
-  #   doc = Nokogiri::HTML(open(url))
-  #   doc.css(".price").children.each do |coin|
-  #     @coin_price << coin.text
-  #   end
-  #   @coin_price
-  # end
-  #
-  # def self.zipping
-  #   self.scrape_name.each_with_index do |val, ind|
-  #     @pairs[val] = self.price[ind]
-  #   end
-  #   @pairs
-  # end
-  #
-  # def self.reveal(input)
-  #   @pairs[input]
-  # end
-  #
-  # def self.pairs
-  #   @pairs
-  # end
-
-
 end

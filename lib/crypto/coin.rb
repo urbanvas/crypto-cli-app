@@ -6,7 +6,7 @@ class Coin
   @@title = []
 
   def initialize(coin, price)
-    @coin = coin
+    @name = coin
     @price = price
     @@all << self if !@@all.include?(self)
     @@title << coin.downcase if !@@title.include?(coin)

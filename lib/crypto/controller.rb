@@ -26,8 +26,8 @@ class Controller
       puts " "
       take_action
     elsif input != "exit"
-      coin = Datascraper.dos.select {|name| Coin.name == input}
-      puts "The current price of #{input.capitalize} is #{coin.name}"
+      individual = Datascraper.dos.detect {|coin| coin.name == input}
+      puts "The current price of #{input.capitalize} is #{individual.price}"
       puts " "
       take_action
     end
