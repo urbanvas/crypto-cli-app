@@ -5,23 +5,13 @@ favorite coins in USD.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'crypto'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install crypto
+Fork and run bin/crypt to get started.
 
 ## Usage
 
 It's quite simple, just type in the coin that you wish to see and have the price returned to you.
+
+run bin/crypt
 
 ## Development
 
