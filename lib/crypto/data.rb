@@ -9,12 +9,6 @@ class Datascraper
   @coin_names = []
   @coin_price = []
 
-  @@dos = []
-
-  def self.dos
-    @@dos
-  end
-
   def self.scrape_name(url = 'https://coinmarketcap.com/')
     doc = Nokogiri::HTML(open(url))
     doc.css(".currency-name-container").children.each do |coin|
@@ -26,12 +20,8 @@ class Datascraper
 
     i = 0
     until i == @coin_names.size
-      @@dos << Coin.new(@coin_names[i], @coin_price[i])
+      Coin.new(@coin_names[i], @coin_price[i])
       i += 1
     end
-  end
-
-  def dos
-    @@dos
   end
 end

@@ -21,12 +21,12 @@ class Controller
     input = gets.chomp.downcase
     if input == "exit"
       puts "Hope you see many gains! Have a nice day."
-    elsif Coin.title.include?(input) == false
+    elsif !Coin.all.detect {|coin| coin.name == input}
       puts "Could not find it, please enter it again."
       puts " "
       take_action
     elsif input != "exit"
-      individual = Datascraper.dos.detect {|coin| coin.name == input}
+      individual = Coin.all.detect {|coin| coin.name == input}
       puts "The current price of #{input.capitalize} is #{individual.price}"
       puts " "
       take_action
