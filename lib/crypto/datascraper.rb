@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
+require 'pry'
 
 class Datascraper
 
@@ -16,7 +17,6 @@ class Datascraper
     doc.css(".price").children.each do |coin|
       @coin_price << coin.text
     end
-
     i = 0
     until i == @coin_names.size
       Coin.new(@coin_names[i], @coin_price[i])

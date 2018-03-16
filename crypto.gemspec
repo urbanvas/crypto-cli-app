@@ -2,9 +2,6 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "crypto/version"
-require './lib/crypto/coin'
-require './lib/crypto/controller'
-require './lib/crypto/data'
 
 Gem::Specification.new do |spec|
   spec.name          = "crypto"
