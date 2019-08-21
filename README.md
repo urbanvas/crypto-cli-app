@@ -7,10 +7,10 @@ favorite coins in USD.
 
 ## Installation
 
-*Clone the repository
-*cd into the project folder
-*run `bin/setup`
-*run `bin/crypt` to get started.
+* Clone the repository
+* cd into the project folder
+* run `bin/setup`
+* run `bin/crypt` to get started.
 
 ## Usage
 
