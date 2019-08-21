@@ -3,15 +3,20 @@
 Hello, I'd like to welcome you this nice little gem that returns currency prices of all your
 favorite coins in USD.
 
+![CLI](cli.png)
+
 ## Installation
 
-Fork and run bin/crypt to get started.
+*Clone the repository
+*cd into the project folder
+*run `bin/setup`
+*run `bin/crypt` to get started.
 
 ## Usage
 
-It's quite simple, just type in the coin that you wish to see and have the price returned to you.
+Type in the coin that you wish to see and have the price returned to you.
 
-run bin/crypt
+Run `bin/crypt` to start the application.
 
 ## Development
 
@@ -29,4 +34,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Crypto project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/crypto/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Crypto project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
