@@ -7,6 +7,7 @@ favorite coins in USD.
 
 ## Blog
 
+Link to Article:
 [Medium](https://medium.com/@neilvseejoor/a-story-of-a-gem-80c7a38bb67d)
 
 ## Installation
