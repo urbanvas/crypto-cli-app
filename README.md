@@ -5,6 +5,10 @@ favorite coins in USD.
 
 ![CLI](cli.png)
 
+## Blog
+
+[Medium](https://medium.com/@neilvseejoor/a-story-of-a-gem-80c7a38bb67d)
+
 ## Installation
 
 * Clone the repository
