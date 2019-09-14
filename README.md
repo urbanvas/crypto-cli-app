@@ -5,6 +5,10 @@ favorite coins in USD.
 
 ![CLI](cli.png)
 
+## DEMO
+
+[YouTube](https://youtu.be/lliAR4BKh9U)
+
 ## Blog
 
 Link to Article:
