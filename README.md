@@ -9,6 +9,10 @@ favorite coins in USD.
 
 [YouTube](https://youtu.be/lliAR4BKh9U)
 
+# Links
+
+[LinkedIn](https://www.linkedin.com/in/neilvseejoor/)
+
 ## Blog
 
 Link to Article:
