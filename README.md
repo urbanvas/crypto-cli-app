@@ -7,7 +7,7 @@ favorite coins in USD.
 
 ## DEMO
 
-[YouTube](https://youtu.be/lliAR4BKh9U)
+[YouTube](https://youtu.be/20bZrN7mklA)
 
 # Links
 
